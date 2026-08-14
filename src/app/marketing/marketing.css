@@ -1,0 +1,47 @@
+/* MARKETING ONLY */
+
+.marketing-projects .bip-proj-shape {
+  width: 200px;
+  height: 200px;
+}
+
+/* Card 01 */
+.marketing-projects .col-md-6:nth-child(1) .bip-proj-shape {
+  width: 170px;
+  height: 270px;
+  top: 0;
+  left: 120px;
+  right: auto;
+  border-radius: 0;
+}
+
+/* Card 02 */
+.marketing-projects .col-md-6:nth-child(2) .bip-proj-shape {
+  width: 210px;
+  height: 210px;
+  top: 50px;
+  right: -25px;
+  border-radius: 50%;
+}
+
+/* Card 03 */
+.marketing-projects .col-md-6:nth-child(3) .bip-proj-shape {
+  width: 200px;
+  height: 190px;
+  top: 35px;
+  right: 40px;
+  left: auto;
+  border-radius: 0;
+  transform: rotate(12deg);
+}
+
+/* Card 04 */
+.marketing-projects .col-md-6:nth-child(4) .bip-proj-shape {
+  width: 210px;
+  height: 210px;
+  top: 45px;
+  right: 35px;
+  left: auto;
+  border-radius: 0;
+  transform: rotate(45deg);
+}

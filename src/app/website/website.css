@@ -1,0 +1,91 @@
+/* =====================================================
+   UI/UX PROJECTS ONLY
+===================================================== */
+
+/* Card-to-card spacing */
+.uiux-projects .bip-proj-grid {
+  --bs-gutter-x: 12px;
+  --bs-gutter-y: 12px;
+}
+
+
+/* =====================================================
+   COMMON SHAPE
+===================================================== */
+
+.uiux-projects .bip-proj-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+
+/* =====================================================
+   CARD 01 - MURAL STUDIO
+   Screenshot: vertical rectangle
+===================================================== */
+
+.uiux-projects .col-md-6:nth-child(1) .bip-proj-shape {
+  width: 220px;
+  height: 280px;
+
+  top: 0;
+  left: 75px;
+  right: auto;
+
+  border-radius: 0;
+  transform: none;
+}
+
+
+/* =====================================================
+   CARD 02 - FORMA LAB
+   Screenshot: tilted rectangle
+===================================================== */    
+
+.uiux-projects .col-md-6:nth-child(2) .bip-proj-shape {
+  width: 190px;
+  height: 190px;
+
+  top: 30px;
+  right: 35px;
+  left: auto;
+
+  border-radius: 0;
+  transform: rotate(12deg);
+}
+
+
+/* =====================================================
+   CARD 03 - KOVA
+   Screenshot: large rounded shape / circle
+===================================================== */
+
+.uiux-projects .col-md-6:nth-child(3) .bip-proj-shape {
+  width: 220px;
+  height: 220px;
+
+  top: 45px;
+  right: -30px;
+  left: auto;
+
+  border-radius: 50%;
+  transform: none;
+}
+
+
+/* =====================================================
+   CARD 04 - ONDO
+   Screenshot: diamond
+===================================================== */
+
+.uiux-projects .col-md-6:nth-child(4) .bip-proj-shape {
+  width: 210px;
+  height: 210px;
+
+  top: 45px;
+  right: 35px;
+  left: auto;
+
+  border-radius: 0;
+  transform: rotate(45deg);
+}

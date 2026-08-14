@@ -1,0 +1,35 @@
+.strip-outer {
+  background-color: #f2f0ec;
+}
+
+.strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid #e5e2dc;
+  padding: 2rem 1rem;
+}
+
+.strip-row {
+  gap: 2.5rem 4rem;
+}
+
+.strip-item {
+  min-width: 110px;
+}
+
+.strip-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111;
+}
+
+@media (min-width: 768px) {
+  .strip-value {
+    font-size: 1.8rem;
+  }
+}
+
+.strip-label {
+  font-size: 0.72rem;
+  color: #8a8580;
+}

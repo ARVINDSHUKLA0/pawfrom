@@ -1,0 +1,142 @@
+.pc-cta-section {
+  position: relative;
+  background: #0a0a0a;
+  padding: 100px 20px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.pc-cta-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(120, 80, 220, 0.053) 0%, rgba(10, 10, 10, 0) 70%);
+  pointer-events: none;
+}
+
+.pc-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pc-cta-label {
+  color: #888;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.pc-cta-heading {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.pc-cta-question {
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+}
+
+.pc-cta-subtext {
+  color: #999;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.pc-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 90px;
+}
+
+.pc-btn-primary {
+  background: #fff;
+  color: #111;
+  padding: 13px 26px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.pc-btn-primary:hover {
+  opacity: 0.85;
+  color: #111;
+}
+
+.pc-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 13px 26px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.pc-btn-secondary:hover {
+  border-color: #888;
+  color: #fff;
+}
+
+.pc-footer {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #1e1e1e;
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pc-footer-copy {
+  color: #666;
+  font-size: 13px;
+  margin: 0;
+}
+
+.pc-footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.pc-footer-links a {
+  color: #888;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pc-footer-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .pc-cta-heading {
+    font-size: 32px;
+  }
+  .pc-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pc-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

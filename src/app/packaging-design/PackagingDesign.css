@@ -1,0 +1,87 @@
+/* =================================================
+   PACKAGING PROJECTS ONLY
+================================================= */
+
+.packaging-projects .bip-proj-grid {
+  --bs-gutter-x: 12px;
+  --bs-gutter-y: 12px;
+}
+
+
+/* Common shape */
+.packaging-projects .bip-proj-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+
+/* =================================================
+   CARD 01 - PEBBLE FOODS
+   Figma: tilted rectangle
+================================================= */
+
+.packaging-projects .col-md-6:nth-child(1) .bip-proj-shape {
+  width: 175px;
+  height: 175px;
+
+  top: 25px;
+  right: 10px;
+  /* right: auto; */
+
+  border-radius: 0;
+  transform: rotate(12deg);
+}
+
+
+/* =================================================
+   CARD 02 - LUNE FRAGRANCE
+   Figma: vertical rectangle
+================================================= */
+
+.packaging-projects .col-md-6:nth-child(2) .bip-proj-shape {
+  width: 200px;
+  height: 280px;
+
+  top: 0;
+  left: 75px;
+  right: auto;
+
+  border-radius: 0;
+  transform: none;
+}
+
+
+/* =================================================
+   CARD 03 - ONDO SUPPLEMENTS
+   Figma: large circle
+================================================= */
+
+.packaging-projects .col-md-6:nth-child(3) .bip-proj-shape {
+  width: 230px;
+  height: 230px;
+
+  top: 40px;
+  right: -30px;
+  left: auto;
+
+  border-radius: 50%;
+  transform: none;
+}
+
+
+/* =================================================
+   CARD 04 - VELD BOTANICALS
+   Figma: diamond
+================================================= */
+
+.packaging-projects .col-md-6:nth-child(4) .bip-proj-shape {
+  width: 215px;
+  height: 215px;
+
+  top: 45px;
+  right: 30px;
+  left: auto;
+
+  border-radius: 0;
+  transform: rotate(45deg);
+}

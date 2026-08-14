@@ -1,0 +1,53 @@
+.branding-projects .bip-proj-grid {
+  --bs-gutter-x: 10px;
+  --bs-gutter-y: 10px;
+}
+
+.branding-projects .bip-proj-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* 01 */
+.branding-projects .col-md-6:nth-child(1) .bip-proj-shape {
+  width: 210px;
+  height: 210px;
+  top: 50px;
+  right: -25px;
+  left: auto;
+  border-radius: 50%;
+  transform: none;
+}
+
+/* 02 */
+.branding-projects .col-md-6:nth-child(2) .bip-proj-shape {
+  width: 210px;
+  height: 270px;
+  top: 50px;
+  right: 20px;
+  left: auto;
+  border-radius: 10px;
+  transform: none;
+}
+
+/* 03 */
+.branding-projects .col-md-6:nth-child(3) .bip-proj-shape {
+  width: 200px;
+  height: 190px;
+  top: 35px;
+  right: 40px;
+  left: auto;
+  border-radius: 0;
+  transform: rotate(12deg);
+}
+
+/* 04 */
+.branding-projects .col-md-6:nth-child(4) .bip-proj-shape {
+  width: 210px;
+  height: 210px;
+  top: 45px;
+  right: 35px;
+  left: auto;
+  border-radius: 0;
+  transform: rotate(45deg);
+}

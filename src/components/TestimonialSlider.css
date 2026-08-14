@@ -1,0 +1,89 @@
+.bid-testimonial-slider {
+  margin-top: 20px;
+}
+
+.bid-testimonial {
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 50px 60px;
+}
+
+.bid-quote-mark {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5b4dfa;
+  line-height: 1;
+}
+
+.bid-quote-text {
+  font-size: 20px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+.bid-testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bid-author-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #5b4dfa;
+  flex-shrink: 0;
+}
+
+.bid-author-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.bid-author-role {
+  font-size: 13px;
+  color: #888;
+}
+
+.bid-testimonial-slider .slick-dots {
+  position: static;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.bid-testimonial-slider .slick-dots li {
+  margin: 0;
+}
+
+.bid-testimonial-slider .slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #d8d8f5;
+  cursor: pointer;
+}
+
+.bid-testimonial-slider .slick-dots li.slick-active button {
+  background: #5b4dfa;
+}
+
+.bid-testimonial-slider .slick-dots li button:before {
+  content: none;
+}
+.btn-size{
+    font-size: 10px;
+    background-color: #E7EAF6;
+    color: #5b4dfa;
+}

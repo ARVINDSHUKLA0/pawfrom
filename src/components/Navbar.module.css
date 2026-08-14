@@ -1,0 +1,60 @@
+.navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.navLink {
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #111;
+}
+
+.hamburgerBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1100;
+  line-height: 0;
+}
+
+.hamburgerIcon {
+  font-size: 22px;
+  color: #111;
+}
+
+/* mobile dropdown panel */
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  z-index: 1050;
+}
+
+.mobileMenuOpen {
+  max-height: 260px;
+}
+
+.mobileMenuLink {
+  padding: 14px 24px;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.mobileMenuLink:hover {
+  background-color: #f8f8f8;
+  color: #111;
+}
