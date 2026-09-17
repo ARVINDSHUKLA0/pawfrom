@@ -199,7 +199,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="row bip-proj-grid gy-4">
+          {/* <div className="row bip-proj-grid gy-4">
             {projects.map((project) => (
               <div className="col-12 col-md-6" key={project.title}>
                 <a href="#" className="bip-proj-card" style={{ background: project.bg }}>
@@ -241,7 +241,7 @@ const page = () => {
                 </a>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
