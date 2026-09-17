@@ -1,6 +1,8 @@
+
 .navbar {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
+
 .navLink {
   text-decoration: none;
   color: #6b6b6b;
@@ -11,6 +13,134 @@
 .navLink:hover {
   color: #111;
 }
+ 
+
+.serviceDropdown {
+  position: relative;
+}
+
+.serviceLink {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dropdownIcon {
+  font-size: 10px;
+  transition: transform 0.25s ease;
+}
+ 
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 25px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  width: 220px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+
+  padding: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+
+  z-index: 2000;
+}
+
+/* Small arrow */
+
+.dropdownMenu::before {
+  content: "";
+
+  position: absolute;
+
+  top: -6px;
+  left: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  background: #fff;
+
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Show dropdown on hover */
+
+.serviceDropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateX(-50%) translateY(0);
+}
+
+.serviceDropdown:hover .dropdownIcon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown UL */
+
+.dropdownList {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* Dropdown LI */
+
+.dropdownList li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown Links */
+
+.dropdownList li a {
+  display: block;
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  text-decoration: none;
+
+  color: #444;
+
+  font-size: 14px;
+
+  border-radius: 8px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+
+  box-sizing: border-box;
+}
+
+.dropdownList li a:hover {
+  background-color: #f5f5f5;
+
+  color: #111;
+
+  padding-left: 18px;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
 
 .hamburgerBtn {
   background: none;
@@ -26,35 +156,149 @@
   color: #111;
 }
 
-/* mobile dropdown panel */
+/* =========================
+   MOBILE MENU
+========================= */
+
 .mobileMenu {
   position: absolute;
+
   top: 100%;
   left: 0;
   right: 0;
+
   background-color: #fff;
+
   display: flex;
   flex-direction: column;
+
   overflow: hidden;
+
   max-height: 0;
+
   transition: max-height 0.35s ease;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
   z-index: 1050;
 }
 
 .mobileMenuOpen {
-  max-height: 260px;
+  max-height: 500px;
 }
 
 .mobileMenuLink {
   padding: 14px 24px;
+
   text-decoration: none;
+
   color: #444;
+
   font-size: 0.95rem;
+
   border-top: 1px solid #f0f0f0;
 }
 
 .mobileMenuLink:hover {
   background-color: #f8f8f8;
   color: #111;
+}
+
+/* =========================
+   MOBILE SERVICE
+========================= */
+
+.mobileService {
+  border-top: 1px solid #f0f0f0;
+}
+
+.mobileServiceButton {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 24px;
+
+  background: #fff;
+
+  border: none;
+
+  color: #444;
+
+  font-size: 0.95rem;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.mobileServiceButton:hover {
+  background-color: #f8f8f8;
+  color: #111;
+}
+
+.mobileDropdownIcon {
+  font-size: 11px;
+
+  transition: transform 0.25s ease;
+}
+
+.mobileDropdownIconOpen {
+  transform: rotate(180deg);
+}
+
+/* Mobile Product Dropdown */
+
+.mobileDropdown {
+  max-height: 0;
+
+  overflow: hidden;
+
+  background: #fafafa;
+
+  transition: max-height 0.3s ease;
+}
+
+.mobileDropdownOpen {
+  max-height: 300px;
+}
+
+.mobileDropdownList {
+  list-style: none;
+
+  padding: 5px 0 8px;
+  margin: 0;
+}
+
+.mobileDropdownList li {
+  margin: 0;
+  padding: 0;
+}
+
+.mobileDropdownList li a {
+  display: block;
+
+  padding: 11px 24px 11px 40px;
+
+  text-decoration: none;
+
+  color: #666;
+
+  font-size: 0.9rem;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.mobileDropdownList li a:hover {
+  background-color: #f1f1f1;
+
+  color: #111;
+
+  padding-left: 44px;
 }

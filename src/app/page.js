@@ -1,8 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import HomePageStrip from "@/components/HomePageStrip";
+import HeroSection from "@/components/HeroSection"; 
 import OurPhilosophy from "@/components/OurPhilosophy";
 import OurProcess from "@/components/OurProcess";
 import ServicesAsOutcomes from "@/components/ServicesAsOutcomes";
@@ -16,8 +15,7 @@ export default function Home() {
   return (
 <>
 <Navbar/>
-<HeroSection/>
-<HomePageStrip/>
+<HeroSection/> 
 <FilpBanner/>
 <OurPhilosophy/>
 <OurProcess/>
@@ -27,5 +25,5 @@ export default function Home() {
 <TrustedBy/>
 <Footer/>
 </>
-  );
+  );  
 }

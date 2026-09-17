@@ -7,14 +7,7 @@
   position: relative;
   width: 100%;
   height: 750px;
-}
-/* 
-.services-bubble-wrap {
-  position: absolute;
-  top: var(--bubble-top);
-  left: var(--bubble-left);
-  transform: translate(-50%, -50%);
-} */
+} 
 
 .services-bubble-wrap {
   position: absolute;
