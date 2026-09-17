@@ -1,4 +1,4 @@
-
+/* 
 .navbar {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
@@ -57,9 +57,7 @@
 
   z-index: 2000;
 }
-
-/* Small arrow */
-
+ 
 .dropdownMenu::before {
   content: "";
 
@@ -74,9 +72,7 @@
   background: #fff;
 
   transform: translateX(-50%) rotate(45deg);
-}
-
-/* Show dropdown on hover */
+} 
 
 .serviceDropdown:hover .dropdownMenu {
   opacity: 1;
@@ -88,24 +84,20 @@
 .serviceDropdown:hover .dropdownIcon {
   transform: rotate(180deg);
 }
-
-/* Dropdown UL */
+ 
 
 .dropdownList {
   list-style: none;
 
   padding: 0;
   margin: 0;
-}
-
-/* Dropdown LI */
+} 
 
 .dropdownList li {
   margin: 0;
   padding: 0;
 }
-
-/* Dropdown Links */
+ 
 
 .dropdownList li a {
   display: block;
@@ -136,11 +128,7 @@
   color: #111;
 
   padding-left: 18px;
-}
-
-/* =========================
-   HAMBURGER
-========================= */
+} 
 
 .hamburgerBtn {
   background: none;
@@ -155,11 +143,7 @@
   font-size: 22px;
   color: #111;
 }
-
-/* =========================
-   MOBILE MENU
-========================= */
-
+ 
 .mobileMenu {
   position: absolute;
 
@@ -203,10 +187,7 @@
   background-color: #f8f8f8;
   color: #111;
 }
-
-/* =========================
-   MOBILE SERVICE
-========================= */
+ 
 
 .mobileService {
   border-top: 1px solid #f0f0f0;
@@ -249,8 +230,7 @@
 .mobileDropdownIconOpen {
   transform: rotate(180deg);
 }
-
-/* Mobile Product Dropdown */
+ 
 
 .mobileDropdown {
   max-height: 0;
@@ -302,3 +282,24 @@
 
   padding-left: 44px;
 }
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+

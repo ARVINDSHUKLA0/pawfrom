@@ -141,7 +141,7 @@ const OurServices = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar  theme="light"  />
 
       {/* <section className="services-section ">
         <div className="container-fluid services-container">

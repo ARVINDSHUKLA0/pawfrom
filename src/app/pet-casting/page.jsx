@@ -165,7 +165,7 @@ const steps = [
 const page = () => {
   return (
     <>
-      <Navbar />
+      <Navbar  theme="light" />
       <section className='custom-color text-white py-md-5 py-sm-3 py-2'>
         <div className='container-fluid pet-casting-conatiner'>
           <p className='fs-12 text-uppercase'>pet roster</p>

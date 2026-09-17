@@ -1,0 +1,236 @@
+.MainBannerWarper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.MainBannerWarper video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.customPostion {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.heroheading {
+  font-size: clamp(40px, 6vw, 75px);
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.customFontSize {
+  font-size: 42px; 
+  font-weight: 600;
+  line-height: 55px; 
+}
+
+.imageBox {
+  width: 100%;
+  height: 450px;
+  overflow: hidden; 
+  /* border-radius: 0 0 60% 0; */
+  
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+ 
+.ImagesHeight { 
+  height: auto;
+  width: 100%;
+}
+
+.ImagesHeight img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;  
+}
+
+.CustomFontBigSize {
+  font-size: 310px;
+  line-height: 300px;
+  font-weight: 900;
+  white-space: nowrap;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.CustomP {
+  position: relative;
+  overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .customPostion {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin-top: 50vh;
+    left: 0px;
+    padding: 0px 5px;
+    /* Adjust this value as needed */
+
+  }
+
+  .customFontSize {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+
+  .heroheading {
+    font-size: clamp(28px, 7vw, 40px);
+  }
+
+  .ImagesHeight {
+    height: auto;
+  }
+
+  .MainBannerWarper {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .CustomFontBigSize {
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 900;
+    white-space: nowrap;
+    will-change: transform;
+  }
+}
+
+
+
+
+/* .MainServices{  
+  height: 100vh;
+  border: 2px solid black;
+  width: 25%; 
+  border-radius: 21px;
+  margin: auto;
+  position: relative !important; 
+  top: 100px; 
+    height: calc(638px - 100px); 
+} */
+
+/* center layout (desktop) */
+/* .boxes{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.twoPostion{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+} 
+
+.ThreePostion {
+  position: absolute !important;     
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+ 
+ 
+ @media (max-width: 1197px) {
+
+  .MainServices{ 
+    height: auto;     
+    margin: 0 auto;     
+    border: 0;
+    width: 100%; 
+    position: static;  
+  }
+
+  
+ 
+} 
+
+@media (max-width: 480px) {
+  .customPostion {
+    margin-top: 35vh;
+  }
+
+  .CustomFontBigSize {
+    font-size: 60px;
+    line-height: 40px;
+    font-weight: 900;
+    white-space: nowrap;
+    will-change: transform;
+  }
+
+  .heroheading {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .imageBox {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px !important;
+
+  }
+ 
+  .imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+}
+ 
+@media (min-width: 769px) and (max-width: 1197px) {
+  .customPostion {
+    top: 80%;
+  }
+
+  .customFontSize {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .heroheading {
+    font-size: clamp(32px, 6vw, 50px);
+  }
+
+  .CustomFontBigSize {
+    font-size: 200px;
+    line-height: 160px;
+    font-weight: 900;
+    white-space: nowrap;
+    will-change: transform;
+  }
+}
+
+@media (min-width: 1600px) {
+  .customWidthText {
+    width: 1600px !important;
+    margin: auto;
+  }
+  .MainServices{
+    width: 18% !important;
+  }
+ 
+}

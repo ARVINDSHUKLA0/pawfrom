@@ -96,7 +96,7 @@ const page = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar  theme="light" />
 
       {/* ---------- Hero ---------- */}
       <section className="bip-hero-section">
