@@ -39,7 +39,7 @@ const Navbar = ({ theme = "dark", className = "" }) => {
                     ? "/img/pawform-logo-white.webp"
                     : "/img/pawform-logo-black.webp"
                 }
-                width={100}
+                width={140}
                 alt="Pawform"
               />
             </Link>
@@ -85,19 +85,19 @@ const Navbar = ({ theme = "dark", className = "" }) => {
                   {/* DROPDOWN */}
                   <div className="service-dropdown-menu">
 
-                    <Link href="#">
+                    <Link href="/packaging-design">
                       Product design
                     </Link>
 
-                    <Link href="#">
+                    <Link href="/branding">
                       branding & packaging design
                     </Link>
 
-                    <Link href="#">
+                    <Link href="/website">
                       website design & development
                     </Link>
 
-                    <Link href="#">
+                    <Link href="/marketing">
                       digital marketing
                     </Link>
 
@@ -239,31 +239,31 @@ const Navbar = ({ theme = "dark", className = "" }) => {
             >
 
               <Link
-                href="/our-services"
+                href="/packaging-design"
                 onClick={closeMenu}
               >
-                All Services
+                 Product design
               </Link>
 
               <Link
-                href="/our-services/pet-photography"
+                href="/branding"
                 onClick={closeMenu}
               >
-                Pet Photography
+                 branding & packaging design
               </Link>
 
               <Link
-                href="/our-services/pet-modeling"
+                href="/website"
                 onClick={closeMenu}
               >
-                Pet Modeling
+                  website design & development
               </Link>
 
               <Link
-                href="/our-services/pet-casting"
+                href="/marketing"
                 onClick={closeMenu}
               >
-                Pet Casting
+                digital marketing
               </Link>
 
             </div>
