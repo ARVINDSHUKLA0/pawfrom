@@ -24,9 +24,8 @@ const Navbar = ({ theme = "dark", className = "" }) => {
 
   return (
     <nav
-      className={`navbar-main ${
-        isDark ? "navbar-dark" : "navbar-light"
-      } ${className}`}
+      className={`navbar-main ${isDark ? "navbar-dark" : "navbar-light"
+        } ${className}`}
     >
       <div className="container-fluid custom-container my-3">
         <div className="custom-border">
@@ -35,7 +34,11 @@ const Navbar = ({ theme = "dark", className = "" }) => {
           <div className="navbar-logo">
             <Link href="/" onClick={closeMenu}>
               <img
-                src="/img/logoBlack.jpeg"
+                src={
+                  isDark
+                    ? "/img/pawform-logo-white.webp"
+                    : "/img/pawform-logo-black.webp"
+                }
                 width={100}
                 alt="Pawform"
               />
@@ -82,20 +85,20 @@ const Navbar = ({ theme = "dark", className = "" }) => {
                   {/* DROPDOWN */}
                   <div className="service-dropdown-menu">
 
-                    <Link href="/our-services">
-                      All Services
+                    <Link href="#">
+                      Product design
                     </Link>
 
-                    <Link href="/our-services/pet-photography">
-                      Pet Photography
+                    <Link href="#">
+                      branding & packaging design
                     </Link>
 
-                    <Link href="/our-services/pet-modeling">
-                      Pet Modeling
+                    <Link href="#">
+                      website design & development
                     </Link>
 
-                    <Link href="/our-services/pet-casting">
-                      Pet Casting
+                    <Link href="#">
+                      digital marketing
                     </Link>
 
                   </div>
@@ -158,9 +161,8 @@ const Navbar = ({ theme = "dark", className = "" }) => {
           MOBILE SIDE MENU
       ============================== */}
       <div
-        className={`side-menu ${
-          open ? "active" : ""
-        }`}
+        className={`side-menu ${open ? "active" : ""
+          }`}
       >
 
         {/* CLOSE */}
@@ -211,11 +213,10 @@ const Navbar = ({ theme = "dark", className = "" }) => {
               {/* SERVICE ICON */}
               <button
                 type="button"
-                className={`mobile-service-icon ${
-                  serviceOpen
+                className={`mobile-service-icon ${serviceOpen
                     ? "mobile-service-icon-active"
                     : ""
-                }`}
+                  }`}
                 onClick={handleServiceToggle}
                 aria-label="Open Service menu"
                 aria-expanded={serviceOpen}
@@ -231,11 +232,10 @@ const Navbar = ({ theme = "dark", className = "" }) => {
                 MOBILE SERVICE DROPDOWN
             ============================== */}
             <div
-              className={`mobile-service-menu ${
-                serviceOpen
+              className={`mobile-service-menu ${serviceOpen
                   ? "mobile-service-menu-active"
                   : ""
-              }`}
+                }`}
             >
 
               <Link

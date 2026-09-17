@@ -4,15 +4,15 @@ import React from 'react'
 
 // Add / remove logos here — replace `logo` with actual image path e.g. "/logos/lune.svg"
 const brands = [
-  { name: "Do", logo: "/logos/do.svg" },
-  { name: "Lune Co.", logo: "/logos/lune.svg" },
-  { name: "Prism", logo: "/logos/prism.svg" },
-  { name: "Veld Group", logo: "/logos/veld.svg" },
-  { name: "Kova", logo: "/logos/kova.svg" },
-  { name: "Mural Studio", logo: "/logos/mural.svg" },
-  { name: "Pebble", logo: "/logos/pebble.svg" },
-  { name: "Forma Lab", logo: "/logos/forma.svg" },
-  { name: "Ondo", logo: "/logos/ondo.svg" },
+  { name: "Do", logo: "logo" },
+  { name: "Lune Co.", logo: "logo" },
+  { name: "Prism", logo: "logo" },
+  { name: "Veld Group", logo: "logo" },
+  { name: "Kova", logo: "logo" },
+  { name: "Mural Studio", logo: "logo" },
+  { name: "Pebble", logo: "logo" },
+  { name: "Forma Lab", logo: "logo" },
+  { name: "Ondo", logo: "logo" },
 ];
 
 const TrustedBy = () => {
